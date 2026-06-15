@@ -52,20 +52,24 @@ class _StudentloginState extends State<Studentlogin> {
               ),
             ),
             SizedBox(height: 20),
-            ElevatedButton(onPressed: () {updatestudent(doc.id, name.text, rollno.text, course.text, context);
-              
-            }, style: ElevatedButton.styleFrom(minimumSize: Size(300, 60),
-                        backgroundColor: const Color.fromARGB(
-                          255,
-                          232,
-                          109,
-                          48,
-                        ),
-                        foregroundColor: Colors.black,
-                      ),
-                      
-                      child: Text("Update"),)
-            
+            ElevatedButton(
+              onPressed: () {
+                updatestudent(
+                  doc.id,
+                  name.text,
+                  rollno.text,
+                  course.text,
+                  context,
+                );
+              },
+              style: ElevatedButton.styleFrom(
+                minimumSize: Size(300, 60),
+                backgroundColor: const Color.fromARGB(255, 232, 109, 48),
+                foregroundColor: Colors.black,
+              ),
+
+              child: Text("Update"),
+            ),
           ],
         );
       },
@@ -166,6 +170,9 @@ class _StudentloginState extends State<Studentlogin> {
                             course.text,
                             context,
                           );
+                          name.clear();
+                          rollno.clear();
+                          course.clear();
                         }
                       },
                       style: ElevatedButton.styleFrom(
