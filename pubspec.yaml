@@ -38,6 +38,11 @@ dependencies:
   firebase_auth: ^6.5.2
   firebase_core: ^4.10.0
   cloud_firestore: ^6.5.0
+  flutter_launcher_icons: ^0.14.4
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/student.png"
 
 dev_dependencies:
   flutter_test:
